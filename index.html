@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/validation.css">
+</head>
+<body>
+<ol>
+	<li><h3> Please provide your First name and Last name below</h3></li>
+<form>
+  First name:<h3>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+
+  <input type="text" name="lastname"><br>
+  <input type="submit" value="Submit">
+  <input type="reset">
+ </form>
+
+  <li><h3>Please provide the information below</h3></li>
+<form>
+  <input type="radio" name="gender" value="male" > Male<br>
+  <input type="radio" name="gender" value="female" checked> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+</form><br><br>
+
+<form>
+  <li>Are you at least 18 years old?:
+  <input type="number" name="quantity" min="18" max="65"></li>
+</form><br><br>
+<li><h3>Please provide your email address below</h3></li>
+<!-- <form> -->
+  <!-- E-mail: -->
+  <!-- <input type="email" name="email" required placeholder="Enter a valid email address"> -->
+<!-- </form>
+ -->
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" />
+
+<label for="emailRequired">Email (required):</label>
+<input type="email" id="emailRequired" name="emailRequired" required />
+
+<form action="#">
+  <label id="guess">Enter a number 1 through 9:</label>
+  <input type="text" id="guess" name="guess" pattern="[1-9]{1}" required />
+</form>
+</body>
+</html>
