@@ -1,48 +1,91 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/validation.css">
+  <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/validation.css">
+      <title>loan application</title>
 </head>
+
 <body>
-<ol>
-	<li><h3> Please provide your First name and Last name below</h3></li>
-<form>
-  First name:<h3>
-  <input type="text" name="firstname"><br>
-  Last name:<br>
+  <fieldset>
+    <legend>Personal Information</legend>
+      <label>First Name:  
+        <input type="text" name="First Name" /></label>
+      <label>Middle Initial:
+        <input type="text" name="Middle Initial"></label>
+      <label>Last Name: 
+        <input type="text" name="Last Name" /></label><br/>
+      <label>Address: 
+        <input type="text" name="Address" /></label><br/>
+      <label>Occupation: 
+        <input type="text" name="Occupation" /></label><br/>
+      <label>Employer: 
+         <input type="text" name="Employer" /> </label><br/>
+      <label>Employer Address: 
+         <input type="text" name="Employer Address"></label><br/>
 
-  <input type="text" name="lastname"><br>
-  <input type="submit" value="Submit">
-  <input type="reset">
- </form>
+  </fieldset>
 
-  <li><h3>Please provide the information below</h3></li>
-<form>
-  <input type="radio" name="gender" value="male" > Male<br>
-  <input type="radio" name="gender" value="female" checked> Female<br>
-  <input type="radio" name="gender" value="other"> Other
-</form><br><br>
+  <fieldset>
+    <legend>Loan Select</legend>
+      <select name="Loan Select">
+        <option value="commercial">Commercial</option>
+        <option value="Real Estate">Real Estate</option>
+        <option value="Personal">Personal</option>
+        <option valaue="mortgage">Mortgage</option>
 
-<form>
-  <li>Are you at least 18 years old?:
-  <input type="number" name="quantity" min="18" max="65"></li>
-</form><br><br>
-<li><h3>Please provide your email address below</h3></li>
-<!-- <form> -->
-  <!-- E-mail: -->
-  <!-- <input type="email" name="email" required placeholder="Enter a valid email address"> -->
-<!-- </form>
- -->
-<label for="email">Email:</label>
-<input type="email" id="email" name="email" />
+      
+      </select>
+  </fieldset>
 
-<label for="emailRequired">Email (required):</label>
-<input type="email" id="emailRequired" name="emailRequired" required />
+  <fieldset>       
+      <label>Requested Amount:
+          <input type="text" name="Requested Amount">
+      </label>
+  </fieldset>
 
-<form action="#">
-  <label id="guess">Enter a number 1 through 9:</label>
-  <input type="text" id="guess" name="guess" pattern="[1-9]{1}" required />
-</form>
+  <fieldset>
+    <legend>Loan Length</legend>  
+          <input type="radio" name="loan length" value="5 years"  />5 years
+          <input type="radio" name="loan length" value="15 years" />15 years
+          <input type="radio" name="loan length" value="30 years" checked="checked" />30 years
+
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Special Conditions</legend>
+         <input type="checkbox" name="Special Conditions" value="I have a down payment"  />I have a down payment
+
+        <input type="checkbox" name="Special Conditions" value="Out-of-state resident"  />Out-Of-State Resident
+    
+        <input type="checkbox" name="Special Conditions" value="Married" />Married
+    
+        <input type="checkbox" name="Special Conditions" value="Loan will be co-signed"  />Loan will be cosigned
+    
+
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Additional Comment</legend>
+   
+      <textarea name="comments" cols="20" rows="4">Please Enter Your Comment Here: </textarea>
+  </fieldset>
+
+  <fieldset>
+    <legend>Contact Information</legend>
+    Email: 
+
+        <input type="email" name="email" color="green" id="email"   required/>
+        <input type="submit" name="submit" />
+        Telelphone Number: 
+        <input type="telephone number" name="telephone number"><br>
+        Linkedin URL:
+        <input type="url" name=website"" color="green" required/>
+        <input type="submit" value="submit"it>
+
+  </fieldset>
+  
+
 </body>
 </html>
